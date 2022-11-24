@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="1234567-homework1.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="logo">ADJECTA Medical</li>
+      <li>
+        <p id="date"></p>
+      </li>
+    </ul>
+  </nav>
+
+  <table>
+    <form id="form">
+      <tr>
+        <td>
+          <label for="firstName">First Name:</label>
+        </td>
+        <td>
+          <input id="firstName" type="text" name="firstName" id="firstName" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="middleName">Middle Initial:</label></td>
+        <td>
+          <input type="text" name="middleName" />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="lastName">Last Name:</label></td>
+        <td>
+          <input type="text" name="lastName" id="lastName" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="DOB">Date of birth:</label></td>
+        <td>
+          <input type="date" id="DOB" name="DOB" min="1910-01-01" max="2142-12-31" />
+        </td>
+      </tr>
+      <tr id="mySsn">
+        <td>
+          <label for="ssn" class="form__label text">Social Security Number:</label>
+        </td>
+        <td>
+          <input type="text" name="ssn" id="ssn" minlength="11" maxlength="11" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="address1">Address Line 1:</label></td>
+        <td>
+          <input type="text" name="address1" id="address1" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="address2">Address Line 2:</label></td>
+        <td>
+          <input type="text" name="address2" id="address2" />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="city">City:</label></td>
+        <td>
+          <input type="text" name="city" id="city" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="state">State:</label></td>
+        <td>
+          <select id="state" name="state">
+            <option value="---">---</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="DC">DC</option>
+            <option value="Delaware">Delaware</option>
+            <option value="District of Columbia">District of Columbia</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Guam">Guam</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Northern Marianas Islands">
+              Northern Marianas Islands
+            </option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Virgin Islands">Virgin Islands</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="zip">ZIP Code:</label></td>
+        <td><input type="text" name="zip" id="zip" required /></td>
+      </tr>
+
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" name="email" id="email" required /></td>
+      </tr>
+      <tr>
+        <td><label for="userID">User id:</label></td>
+        <td><input type="text" name="userID" id="userID" required /></td>
+      </tr>
+      <tr>
+        <td><label for="passId">Password:</label></td>
+        <td><input type="password" name="passId" id="passId" required /></td>
+      </tr>
+      <tr>
+        <td><label for="cpassId">Confirm Password:</label></td>
+        <td>
+          <input type="password" name="cpassId" id="cpassId" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="c1"> Have you had Chicken Pox</label></td>
+        <td><input type="checkbox" id="c1" name="c1" value="pox" /></td>
+      </tr>
+
+      <tr>
+        <td><label for="c2"> Have you had Covid</label></td>
+        <td><input type="checkbox" id="c2" name="c2" value="covid" /></td>
+      </tr>
+
+      <tr>
+        <td><label for="c3"> Have you had Chicken Measles</label></td>
+        <td><input type="checkbox" id="c3" name="c3" value="meales" /></td>
+      </tr>
+
+      <tr>
+        <td><label for="c4"> Have you had Tb</label></td>
+        <td><input type="checkbox" id="c4" name="c4" value="tb" /></td>
+      </tr>
+      <tr>
+        <td><label for="c5"> I have a cancer</label></td>
+        <td><input type="checkbox" id="c5" name="c5" value="cancer" /></td>
+      </tr>
+      <tr>
+        <td>
+          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <label for="html">Have you been vaccinated?</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <label for="css">Is it a private hospital</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+          <label for="javascript">Did they treat you well?</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p><b> Select desired salary from $20,000/year to $200,00/year.</b></p>
+          <input type="range" name="rangeInput" min="20000" max="200000" onchange="updateTextInput(this.value);" />
+
+          <input type="text" id="textInput" value="" />
+        </td>
+      </tr>
+
+      <tr class="about-row">
+        <td><label for="desc">About:</label></td>
+        <td><textarea name="desc" id="desc"></textarea></td>
+      </tr>
+
+      <tr id="myList">
+        <td><button id="submit">Submit</button></td>
+        <td><button id="clear">Start Over</button></td>
+      </tr>
+
+      <tr class="okay"></tr>
+    </form>
+  </table>
+
+  <footer>
+    <ul>
+      <li>
+        <p>ADJECTA Medical</p>
+        <p>PO BOX 18881 Sugar Land TX77496</p>
+      </li>
+      <li>
+        <button>
+          <a target="_blank"
+            href="https://www.amazon.com/ap/signin?clientContext=133-1878831-0759242&openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fa%2Fcode&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_chimera_code_based_linking&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=amzn_chimera_code_based_linking&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+            Contact us
+          </a>
+        </button>
+      </li>
+    </ul>
+  </footer>
+  <script src="1234567-homework1.js"></script>
+  <!-- <script src="abc.js"></script> -->
+</body>
+
+</html>
